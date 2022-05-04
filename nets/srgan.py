@@ -38,6 +38,7 @@ def deconv2d(inputs):
     return x
 
 def build_generator(lr_shape, scale_factor, num_residual=16):
+    print(tf.__version__)
     #-----------------------------------#
     #   获得进行上采用的次数
     #-----------------------------------#
