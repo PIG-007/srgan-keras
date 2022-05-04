@@ -2,7 +2,7 @@ import keras.backend as K
 import numpy as np
 from tqdm import tqdm
 
-from utils import show_result
+from srgan.utils.utils import show_result
 
 def fit_one_epoch(G_model, D_model, Combine_model, VGG_model, epoch, epoch_size, gen, Epoch, batch_size, save_interval):
     G_total_loss = 0
