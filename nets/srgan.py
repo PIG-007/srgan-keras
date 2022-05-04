@@ -2,7 +2,7 @@ import math
 
 import tensorflow as tf
 from keras import layers
-from keras.applications import VGG19
+from keras.applications.vgg19 import VGG19
 from keras.initializers import random_normal
 from keras.models import Model
 
