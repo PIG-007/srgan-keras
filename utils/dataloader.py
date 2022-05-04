@@ -21,7 +21,7 @@ def get_new_img_size(width, height, img_min_side=600):
 
     return resized_width, resized_height
 
-class SRganDataset(keras.utils.Sequence):
+class SRganDataset(keras.utils.all_utils.Sequence):
     def __init__(self, train_lines, lr_shape, hr_shape, batch_size):
         super(SRganDataset, self).__init__()
 
