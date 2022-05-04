@@ -24,7 +24,7 @@ def show_result(num_epoch, G_net, imgs_lr, imgs_hr):
     label = 'Epoch {0}'.format(num_epoch)
     fig.text(0.5, 0.04, label, ha='center')
 
-    plt.savefig("results/train_out/epoch_" + str(num_epoch) + "_results.png")
+    plt.savefig("/kaggle/working/results/train_out/epoch_" + str(num_epoch) + "_results.png")
     plt.close('all')  #避免内存泄漏
 
 #---------------------------------------------------------#
