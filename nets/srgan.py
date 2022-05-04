@@ -27,7 +27,7 @@ def SubpixelConv2D(scale=4):
         return output_shape
 
     def subpixel(x):
-        return tf.depth_to_space(x, scale)
+        return tf.compat.v1.space_to_depth(x, scale)
 
     return layers.Lambda(subpixel, output_shape=subpixel_shape)
     
