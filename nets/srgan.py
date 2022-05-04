@@ -5,7 +5,7 @@ from keras import layers
 from keras.applications.vgg19 import VGG19
 from keras.initializers import random_normal
 from keras.models import Model
-
+print(tf.__version__)
 
 def residual_block(inputs, filters):
     x = layers.Conv2D(filters, kernel_size=3, strides=1, padding='same', kernel_initializer = random_normal(stddev=0.02))(inputs)
